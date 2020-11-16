@@ -20,7 +20,7 @@ find_package(OpenCV 3
     opencv_imgcodecs
   CONFIG
 )
-if (NOT $(OpenCV_FOUND))
+if (NOT OpenCV_FOUND)
   find_package(OpenCV 4 REQUIRED
     COMPONENTS
       opencv_core
